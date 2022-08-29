@@ -1,0 +1,149 @@
+---
+title: 門市據點
+layout: ./app/layout.ejs
+engine: ejs
+current: store-info
+---
+
+<section>
+  <div class="h-20 bg-maroon"></div>
+</section>
+<section>
+  <div class="container mt-20">
+    <h2 class="border-l-8 border-maroon pl-4 mb-[33px] text-5xl">門市據點</h2>
+    <div class="mb-[41px]">
+      <label class="mr-4" for="choose-county">選擇地區</label>
+      <select
+        class="w-[276px] md:w-[304px]"
+        name="choose-county"
+        id="choose-county"
+      >
+        <option value="all" selected>請選擇地區...</option>
+        <option value="Taipei">台北市</option>
+        <option value="Taichung">台中市</option>
+        <option value="Kaohsiung">高雄市</option>
+      </select>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <ul class="grid gap-x-6 md:grid-cols-2 lg:grid-cols-3">
+      <li class="mb-12">
+        <img src="./assets/images/store-1.png" alt="store-image-1" />
+        <h3 class="border border-gray py-2 pl-6">台北中山旗艦店</h3>
+        <ul class="border border-gray py-4 px-6">
+          <li class="flex mb-2">
+            <span class="material-icons block mt-[2px] mr-2"> call </span
+            >電話：(02)334-5678
+          </li>
+          <li class="flex mb-2">
+            <span class="material-icons block mt-[2px] mr-2"> schedule </span
+            >營業時間：10:00-21:00
+          </li>
+          <li class="flex mb-2">
+            <span class="material-icons block mt-[2px] mr-2"> location_on </span
+            >地址：台北市中山區南京東路25巷2-1號
+          </li>
+        </ul>
+        <a
+          class="block bg-black py-4 text-white text-center"
+          href="./store-info-detail.html"
+          >詳細資訊</a
+        >
+      </li>
+      <li class="mb-12">
+        <img src="./assets/images/store-2.png" alt="store-image-2" />
+        <h3 class="border border-gray py-2 pl-6">台北綠園店</h3>
+        <ul class="border border-gray py-4 px-6">
+          <li class="flex mb-2">
+            <span class="material-icons block mt-[2px] mr-2"> call </span
+            >電話：(02)334-5678
+          </li>
+          <li class="flex mb-2">
+            <span class="material-icons block mt-[2px] mr-2"> schedule </span
+            >營業時間：10:00-21:00
+          </li>
+          <li class="flex mb-2">
+            <span class="material-icons block mt-[2px] mr-2"> location_on </span
+            >地址：台北市中正區復興南路 132-1 號
+          </li>
+        </ul>
+        <a
+          class="block bg-black py-4 text-white text-center"
+          href="./store-info-detail.html"
+          >詳細資訊</a
+        >
+      </li>
+      <li class="mb-12">
+        <img src="./assets/images/store-3.png" alt="store-image-3" />
+        <h3 class="border border-gray py-2 pl-6">台中清水旗艦店</h3>
+        <ul class="border border-gray py-4 px-6">
+          <li class="flex mb-2">
+            <span class="material-icons block mt-[2px] mr-2"> call </span
+            >電話：(02)334-5678
+          </li>
+          <li class="flex mb-2">
+            <span class="material-icons block mt-[2px] mr-2"> schedule </span
+            >營業時間：10:00-21:00
+          </li>
+          <li class="flex mb-2">
+            <span class="material-icons block mt-[2px] mr-2"> location_on </span
+            >地址：台中市清水區經南一路 23 號 8 樓
+          </li>
+        </ul>
+        <a
+          class="block bg-black py-4 text-white text-center"
+          href="./store-info-detail.html"
+          >詳細資訊</a
+        >
+      </li>
+      <li class="mb-12">
+        <img src="./assets/images/store-4.png" alt="store-image-4" />
+        <h3 class="border border-gray py-2 pl-6">高雄中正形象店</h3>
+        <ul class="border border-gray py-4 px-6">
+          <li class="flex mb-2">
+            <span class="material-icons block mt-[2px] mr-2"> call </span
+            >電話：(02)334-5678
+          </li>
+          <li class="flex mb-2">
+            <span class="material-icons block mt-[2px] mr-2"> schedule </span
+            >營業時間：10:00-21:00
+          </li>
+          <li class="flex mb-2">
+            <span class="material-icons block mt-[2px] mr-2"> location_on </span
+            >地址：高雄市苓雅區中正路 38 號 12 樓
+          </li>
+        </ul>
+        <a
+          class="block bg-black py-4 text-white text-center"
+          href="./store-info-detail.html"
+          >詳細資訊</a
+        >
+      </li>
+      <li class="mb-12">
+        <img src="./assets/images/store-5.png" alt="store-image-5" />
+        <h3 class="border border-gray py-2 pl-6">高雄夢時代店</h3>
+        <ul class="border border-gray py-4 px-6">
+          <li class="flex mb-2">
+            <span class="material-icons block mt-[2px] mr-2"> call </span
+            >電話：(02)334-5678
+          </li>
+          <li class="flex mb-2">
+            <span class="material-icons block mt-[2px] mr-2"> schedule </span
+            >營業時間：10:00-21:00
+          </li>
+          <li class="flex mb-2">
+            <span class="material-icons block mt-[2px] mr-2"> location_on </span
+            >地址：高雄市前鎮區中華一路 63 號 6 樓
+          </li>
+        </ul>
+        <a
+          class="block bg-black py-4 text-white text-center"
+          href="./store-info-detail.html"
+          >詳細資訊</a
+        >
+      </li>
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,55 @@
+---
+title: 門市據點-資訊-
+layout: ./app/layout.ejs
+engine: ejs
+current: store-info-detail
+---
+
+<section>
+  <div class="h-20 bg-maroon"></div>
+</section>
+<section>
+  <div class="container mt-20">
+    <h2 class="border-l-8 border-maroon pl-4 mb-[33px] text-5xl">門市據點</h2>
+    <div class="mb-[41px]">
+      <label class="mr-2 md:mr-4" for="choose-county">選擇分店</label>
+      <select
+        class="w-[270px] md:w-[304px]"
+        name="choose-county"
+        id="choose-county"
+      >
+        <option value="all" selected>請選擇分店...</option>
+        <option value="store-1">台北中山旗艦店</option>
+        <option value="store-2">台北綠園店</option>
+        <option value="store-3">台中清水旗艦店</option>
+        <option value="store-4">高雄中正形象店</option>
+        <option value="store-5">高雄夢時代店</option>
+      </select>
+    </div>
+  </div>
+</section>
+<section class="mb-20">
+  <div class="container grid gap-x-6 mb-16 md:grid-cols-2">
+    <div class="mb-6">
+      <img src="./assets/images/storepage-1.png" alt="store-image-1" />
+      <h3 class="border border-gray py-2 pl-6">台北中山旗艦店</h3>
+      <ul class="border border-gray py-4 px-6">
+        <li class="flex mb-2">
+          <span class="material-icons block mt-[2px] mr-2"> call </span
+          >電話：(02)334-5678
+        </li>
+        <li class="flex mb-2">
+          <span class="material-icons block mt-[2px] mr-2"> schedule </span
+          >營業時間：10:00-21:00
+        </li>
+        <li class="flex">
+          <span class="material-icons block mt-[2px] mr-2"> location_on </span
+          >地址：台北市中山區南京東路25巷2-1號
+        </li>
+      </ul>
+    </div>
+    <div class="overflow-hidden max-w-4xl max-h-4xl">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.4767482349303!2d121.54061021489613!3d25.051825543730924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdde30008f1%3A0x319a7942664a3d3b!2z5Y-w5YyX5biC5Lit5bGx5Y2A5Y2X5Lqs5p2x6Lev5LiJ5q61!5e0!3m2!1szh-TW!2stw!4v1660549629345!5m2!1szh-TW!2stw" width="1024" height="388"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>

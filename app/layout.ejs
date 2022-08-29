@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><%- title %></title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+    
+    <!-- <style>
+      *{outline: 1px solid lightgray;}
+    </style> -->
+  </head>
+
+  <body>
+    <nav class="header sticky top-0 bg-maroon w-full">
+      <div class="container flex justify-between items-center">
+        <h1 class="py-1 grid-cols-3">
+          <a
+            href="./index.html"
+            class="block w-20 h-[72px] bg-center bg-no-repeat bg-contain indent-[101%] overflow-hidden whitespace-nowrap"
+            style="background-image: url('./assets/images/logo-white.png')"
+            >glasses website</a
+          >
+        </h1>
+        <button class="md:hidden" id="hamburger">
+          <span class="material-icons text-white text-[30px]">menu</span>
+        </button>
+        <ul class="hidden text-white grid-cpls-8 md:flex">
+          <li><a class="block py-1 px-8" href="./optical.html">系列鏡框</a></li>
+          <li><a class="block py-1 px-8" href="./store-info.html">門市據點</a></li>
+          <li><a class="block py-1 px-8" href="./blog.html">部落格</a></li>
+          <li><a class="block py-1 pl-8" href="./qna.html">常見問題</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="hidden bg-maroon text-white" id="nav-menu">
+      <ul class="">
+        <li class="border border-b-0 border-white pl-[1px]">
+          <a href="./optical.html" class="block py-3 text-center">系列鏡框</a>
+        </li>
+        <li class="border border-b-0 border-white pr-[1px]">
+          <a href="./store-info.html" class="block py-3 text-center">門市據點</a>
+        </li>
+        <li class="border border-b-0 border-white pl-[1px]">
+          <a href="./blog.html" class="block py-3 text-center">部落格</a>
+        </li>
+        <li class="border border-white pr-[1px]">
+          <a href="./qna.html" class="block py-3 text-center">常見問題</a>
+        </li>
+      </ul>
+    </div>
+
+    <%- contents %>
+
+    <footer class="footer bg-maroon py-6 md:py-10 lg:py-15">
+      <div class="container">
+      <div
+        class="flex justify-between item-center pb-6 border-b border-white mb-4"
+      >
+        <div>
+          <ul class="text-white hidden md:mb-9 md:flex ">
+            <li><a class="block pr-6" href="./index.html">首頁</a></li>
+            <li><a class="block px-6" href="./optical.html">系列鏡框</a></li>
+            <li><a class="block px-6" href="./store-info.html">門市據點</a></li>
+            <li><a class="block px-6" href="./blog.html">部落格</a></li>
+            <li><a class="block pl-6" href="./qna.html">常見問題</a></li>
+          </ul>
+          <ul class="text-white lg:text-4xl">
+            <li>
+              <span class="material-icons text-white text-lg lg:text-4xl"> call </span>
+              <a href="#">0800-000-000</a>
+            </li>
+            <li>
+              <span class="material-icons text-white text-lg lg:text-4xl"> mail </span>
+              <a href="#">glasses@business.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="flex gap-x-2 md:gap-x-4 lg:gap-x-12">
+          <li>
+            <a href="#"
+              ><img
+                class="h-6 w-6 md:w-10 md:h-10 lg:w-12 lg:h-12"
+                src="./assets/images/ic-social-fb.png"
+                alt="facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="h-6 w-6 md:w-10 md:h-10 lg:w-12 lg:h-12"
+                src="./assets/images/ic_social_ig.png"
+                alt="instergram"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                class="h-6 w-6 md:w-10 md:h-10 lg:w-12 lg:h-12"
+                src="./assets/images/ic_social_line.png"
+                alt="line"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="justify-between items-center md:flex">
+        <p class="text-white mb-2">
+          Copyright © 2020 Glasses.All rights reserved.
+        </p>
+        <div class="md:flex justify-end gap-x-4">
+          <a class="block text-white mb-2" href="#">隱私權政策</a>
+          <a class="block text-white mb-2" href="#">服務條款</a>
+        </div>
+      </div>
+    </div>
+    </footer>
+    <!-- JS -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
